@@ -1,6 +1,6 @@
-# `presentation.sty`: a style file to format academic presentations
+# `presentation.sty` -- a style file to format academic presentations
 
-LaTeX style file to format academic presentations (Beamer)
+A LaTeX style file to format academic presentations (Beamer)
 
 ## How to use
 
