@@ -1,6 +1,6 @@
 # LaTeX template for academic presentations
 
-This repository contains a template to build academic presentations with LaTeX Beamer.
+This repository contains a template to write academic presentations with LaTeX Beamer.
 
 ## Included files and how to use them
 
