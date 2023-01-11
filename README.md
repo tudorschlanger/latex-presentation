@@ -1,6 +1,6 @@
 # LaTeX template for academic presentations
 
-This repository contains a template to write academic presentations with LaTeX Beamer.
+This repository contains a minimalistic template to write academic presentations with LaTeX Beamer.
 
 ## Included files and how to use them
 
@@ -20,4 +20,4 @@ This repository contains a template to write academic presentations with LaTeX B
 
 ## Reference
 
-As much as possible the style file follows Matthew Butterick's wonderful typographical advice in [Practical Typography](https://practicaltypography.com)---especially the [section on presentations](https://practicaltypography.com/presentations.html).
+As much as possible the template follows Matthew Butterick's wonderful typographical advice in [Practical Typography](https://practicaltypography.com)---especially the [section on presentations](https://practicaltypography.com/presentations.html).
