@@ -22,30 +22,22 @@
 \item ut enim ad minim veniam
 \end{itemize}
 \item quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat
-\item[\then] duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur
+\item duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur
 \end{itemize}
 \end{frame}
 
 \begin{frame}
-\frametitle{Another text slide}
+\frametitle{A text slide with alerts}
 \begin{enumerate}
-\item sed do \ral{eiusmod tempor} incididunt
+\item sed do eiusmod tempor incididunt
 \begin{itemize}
-\item ut labore et \gal{dolore magna aliqua}
-\item ut enim \bal{ad minim veniam}
+\item ut labore et dolore magna aliqua
+\item ut enim ad minim veniam
 \end{itemize}
 \item ut enim \al{ad minim veniam}
-\item quis nostrud exercitation \tal{2}{ullamco} \tal{3}{laboris} nisi ut aliquip ex ea commodo consequat
-\item[\so] duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur
+\item quis nostrud exercitation \tal{2}{ullamco} laboris nisi ut aliquip ex ea commodo consequat
+\item[\then] duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur
 \end{enumerate}
-\end{frame}
-
-\begin{frame}
-\frametitle{Slide with graphs \only<4>{(special note)}}
-\includegraphics<1>[scale=\sfig,page=1]{\pdf}%
-\includegraphics<2>[scale=\sfig,page=2]{\pdf}%
-\includegraphics<3>[scale=\sfig,page=3]{\pdf}%
-\includegraphics<4>[scale=\sfig,page=5]{\pdf}%
 \end{frame}
 
 
@@ -54,41 +46,58 @@
 \end{frame}
 
 \begin{frame}
+\frametitle{Slide with graph}
+\includegraphics[scale=\sfig,page=4]{\pdf}%
+\end{frame}
+
+\begin{frame}
+\frametitle{Several graphs \only<1>{(use title as caption)}}
+\includegraphics<1>[scale=\sfig,page=1]{\pdf}%
+\includegraphics<2>[scale=\sfig,page=2]{\pdf}%
+\includegraphics<3>[scale=\sfig,page=3]{\pdf}%
+\includegraphics<4>[scale=\sfig,page=5]{\pdf}%
+\end{frame}
+
+\begin{frame}
 \frametitle{Slide with math}
 \begin{itemize}
-\item home production per unemployed worker: $0 \to \al{\z}$
-\item \# recruiters per vacancy: $1 \to \al{\k}$
-\item Beveridge curve: $v = A/u \to v = A/u^{\al{\e}}$
-\item efficient tightness: 
+\item self-employed household $j \in \R$ maximizes utility
 \begin{equation*}
-\t^* = 1 \quad\to\quad \t^* = \frac{1-\al{\z}}{\al{\k\e}}
+\int_{0}^{\infty}e^{-\d t} \bs{\ln{c_{j}(t)}+ \Uc\of{\frac{b_{j}(t)}{p(t)}-\frac{\Bc(t)}{p(t)}}- \frac{\z}{2} h_{j}(t) -\frac{\g}{2} \pi_{j}(t)^2}dt
 \end{equation*}
-\item efficient unemployment rate:
+\vspace{-0.5cm}
+\begin{itemize}
+\item consumption index: $c_{j}(t) = \bs{\int_{0}^{1}c_{jk}(t)^{(\e-1)/\e}\,dk}^{\e/(\e-1)}$
+\item aggregate wealth:  $\Bc(t) = \int_{0}^{1} b_{j}(t)\,dj$
+\item inflation: $\pi_{j}(t) = \dot{p}_{j}(t)/p_{j}(t)$
+\end{itemize}
+\item subject to budget constraint:
 \begin{equation*}
-u^* = \sqrt{uv} \quad\to\quad u^* =\bp{\frac{\al{\k} \cdot \al{\e}}{1-\al{\z}}\cdot v\cdot u^{\al{\e}}}^{1/(1+\al{\e})}
+\dot{b}_{j}(t) = i(t) b_{j}(t) + p_{j}(t)  y_{j}(t) - \int_0^1 p_{k}(t) c_{jk}(t)\,dk
 \end{equation*}
 \end{itemize}
 \end{frame}
 
 \begin{frame}
-\frametitle{Another slide with math}
-\begin{itemize}
-\item unemployment is almost always on Beveridge curve
-\begin{equation}
-\dot{u}(t) = \L \cdot [1-\Zc(t) + \g - \pi] - \F \cdot u(t)
-\label{e:1}\end{equation}
-\item on Beveridge curve, \eqref{e:1} has $\dot{u}(t)=0$ so $u^b = \l/(\l+f)$
-\item unemployment dynamics and half life: 
-\begin{align*}
-\Uc(t) - \Bc &= \bs{Z(0) - V^\b} e^{-(\l+f)t}\\
-\frac{\ln(2)}{\R+\C} & = \frac{\ln(2)}{\exp(0.59)} = \E[\a]{X + Y}
-\end{align*}
-\end{itemize}	
+\heading{Another section title}
 \end{frame}
 
+
 \begin{frame}
-\frametitle{Another graph}
-\includegraphics[scale=\sfig,page=4]{\pdf}%
+\frametitle{Slide with table and alerts}
+\begin{table}
+\begin{tabular*}{\textwidth}{@{\extracolsep\fill}lccc}
+\toprule
+ & $m < 0$ & $m = 0$ & $m > 0$\\
+\midrule
+$u>u^{*}$  & $\tral{2}{g/c<(g/c)^{*}}$  & $\tbal{1}{g/c=(g/c)^{*}}$ & $\tgal{3}{g/c>(g/c)^{*}}$ \\
+$u=u^{*}$ & $\tbal{1}{g/c=(g/c)^{*}}$ & $\tbal{1}{g/c=(g/c)^{*}}$  & $\tbal{1}{g/c=(g/c)^{*}}$ \\ 
+$u<u^{*}$ & $\tgal{3}{g/c>(g/c)^{*}}$ & $\tbal{1}{g/c=(g/c)^{*}}$ & $\tral{2}{g/c<(g/c)^{*}}$ \\ 
+\midrule
+$\a = \b$ & $\f=\m$ & $\o=\t$  & $\Q=\N$ \\ 
+\bottomrule
+\end{tabular*}
+\end{table}
 \end{frame}
 
 \lastslide
