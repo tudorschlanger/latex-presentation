@@ -16,6 +16,7 @@ This repository contains a minimalist template to write academic presentations w
 - No colors are used in the text (only black/gray) to reduce distraction.
 - Colors are reserved for graphs and alerts.
 - Margins, spacing, and font size are set for comfortable reading.
+- There are no frills at the periphery of the slides.
 
 ## Reference
 
