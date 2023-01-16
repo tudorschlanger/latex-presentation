@@ -1,24 +1,26 @@
 \documentclass[12pt,xcolor={dvipsnames},hyperref={pdftex,pdfpagemode=UseNone,hidelinks,pdfdisplaydoctitle=true},usepdftitle=false]{beamer}
-\usepackage{presentation,math}
-\def\pdf{figures.pdf}
+\usepackage{presentation}
 \hypersetup{pdftitle={Presentation Title}}
+% Enter PDF file with figures here:
+\def\pdf{figures.pdf}
 
 \begin{document}
 
-\title{Presentation Title}
+\title{A Presentation}
+% Enter Author names, presentation date, and permanent URL to paper:
 \information{Author}%
 {Date}%
 {https://github.com/pmichaillat/latex-presentation}
 \frame[plain]{\titlepage}
 
 \begin{frame}
-\frametitle{Slide title}
+\frametitle{A basic text slide}
 \begin{itemize}
 \item lorem ipsum dolor sit amet
 \item consectetur adipiscing elit
 \item sed do eiusmod tempor incididunt
 \begin{itemize}
-\item  ut labore et dolore magna aliqua
+\item ut labore et dolore magna aliqua
 \item ut enim ad minim veniam
 \end{itemize}
 \item quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat
@@ -36,17 +38,28 @@
 \end{itemize}
 \item ut enim \al{ad minim veniam}
 \item quis nostrud exercitation \tal{2}{ullamco} laboris nisi ut aliquip ex ea commodo consequat
-\item[\then] duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur
 \end{enumerate}
 \end{frame}
 
-
 \begin{frame}
-\heading{Section title}
+\frametitle{A text slide with symbols}
+\begin{enumerate}
+\item sed do eiusmod tempor \so incididunt
+\item ut labore et dolore \then magna aliqua
+\item ut enim ad minim veniam when prices \up
+\item ut enim ad minim veniam when prices \down
+\item now prices \flat 
+\item quis nostrud exercitation laboris nisi ut aliquip \then ex ea commodo consequat
+\item URL appear as follows: \url{https://github.com/pmichaillat/latex-presentation}
+\end{enumerate}
 \end{frame}
 
 \begin{frame}
-\frametitle{Slide with graph}
+\heading{A new section}
+\end{frame}
+
+\begin{frame}
+\frametitle{A slide with a graph}
 \includegraphics[scale=\sfig,page=4]{\pdf}%
 \end{frame}
 
@@ -59,16 +72,16 @@
 \end{frame}
 
 \begin{frame}
-\frametitle{Slide with math}
+\frametitle{A slide with math}
 \begin{itemize}
-\item self-employed household $j \in \R$ maximizes utility
+\item self-employed household $j \in \mathbb{R}$ maximizes utility
 \begin{equation*}
-\int_{0}^{\infty}e^{-\d t} \bs{\ln{c_{j}(t)}+ \Uc\of{\frac{b_{j}(t)}{p(t)}-\frac{\Bc(t)}{p(t)}}- \frac{\z}{2} h_{j}(t) -\frac{\g}{2} \pi_{j}(t)^2}dt
+\int_{0}^{\infty}e^{-\delta t} \ln(c_{j}(t))+ \mathcal{U}(b_{j}(t) - \mathcal{B}(t))- \frac{\zeta}{2} h_{j}(t) -\frac{\gamma}{2} \pi_{j}(t)^2\,dt
 \end{equation*}
 \vspace{-0.5cm}
 \begin{itemize}
-\item consumption index: $c_{j}(t) = \bs{\int_{0}^{1}c_{jk}(t)^{(\e-1)/\e}\,dk}^{\e/(\e-1)}$
-\item aggregate wealth:  $\Bc(t) = \int_{0}^{1} b_{j}(t)\,dj$
+\item consumption index: $c_{j}(t) = \int_{0}^{1}c_{jk}(t)^{(\epsilon-1)/\epsilon}\,dk$
+\item aggregate wealth:  $\mathcal{B}(t) = \int_{0}^{1} [b_{j}(t)]^{\sigma}\,dj$
 \item inflation: $\pi_{j}(t) = \dot{p}_{j}(t)/p_{j}(t)$
 \end{itemize}
 \item subject to budget constraint:
@@ -79,12 +92,12 @@
 \end{frame}
 
 \begin{frame}
-\heading{Another section title}
+\heading{Another section}
 \end{frame}
 
 
 \begin{frame}
-\frametitle{Slide with table and alerts}
+\frametitle{A slide with a table and alerts and a long title (use title as caption)}
 \begin{table}
 \begin{tabular*}{\textwidth}{@{\extracolsep\fill}lccc}
 \toprule
@@ -94,7 +107,7 @@ $u>u^{*}$  & $\tral{2}{g/c<(g/c)^{*}}$  & $\tbal{1}{g/c=(g/c)^{*}}$ & $\tgal{3}{
 $u=u^{*}$ & $\tbal{1}{g/c=(g/c)^{*}}$ & $\tbal{1}{g/c=(g/c)^{*}}$  & $\tbal{1}{g/c=(g/c)^{*}}$ \\ 
 $u<u^{*}$ & $\tgal{3}{g/c>(g/c)^{*}}$ & $\tbal{1}{g/c=(g/c)^{*}}$ & $\tral{2}{g/c<(g/c)^{*}}$ \\ 
 \midrule
-$\a = \b$ & $\f=\m$ & $\o=\t$  & $\Q=\N$ \\ 
+$\alpha = \beta$ & $\phi \approx \mu$ & $\omega < \theta$  & $\mathbb{Q}$ or $\mathbb{N}$ \\ 
 \bottomrule
 \end{tabular*}
 \end{table}
