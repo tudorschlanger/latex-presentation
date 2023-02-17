@@ -139,3 +139,15 @@
 \setlength{\bibsep}{0pt}
 \setlength{\bibhang}{1.5em}
 
+% ---- Table of contents ----
+
+\AtBeginSection[]
+{
+    \begin{frame}
+        \frametitle{Outline}
+        \tableofcontents[currentsection, 
+                        currentsubsection,
+                         hideothersubsections] 
+
+    \end{frame}
+}
